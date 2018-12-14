@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Github search engine",
+  "description": "Adds a search engine that searches github.com",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Github",
+      "search_url": "https://github.com/search?q={searchTerms}",
+      "keyword": "gh",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
